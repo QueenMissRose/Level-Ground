@@ -1,0 +1,111 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+}
+
+/* rem font size set to 10px */
+html {
+     font-size: 62.5%;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+a {
+     text-decoration: none !important;  /* removing underline */
+}
+li {
+     list-style-type: none; /* removing bullet point */
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+     height: 100vh;
+}
+     nav {
+          height: 100px;
+     }
+section {
+     float: left;
+}
+section.why {
+     height: 680px;
+     width: 100%;
+     border: 2px solid purple;
+}
+section.visit {
+     height: 100vh;
+     width: 100%;
+     border: 2px solid purple;
+}
+section.volunteer {
+     height: 800px;
+     width: 100%;
+     border: 2px solid purple;
+}
+#footer {
+     height: 200px;
+     width: 100%;
+     border: 2px solid purple;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+header {
+     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/gymbackground.jpg");
+     background-size: cover;
+}
+     .nav-one {
+          width: 33.333%;
+          float: left;
+     }
+          .nav-one ul {
+               text-align: left;
+               display: inline;
+          }
+               .nav-one ul li {
+                    display: inline;
+               }
+     .nav-two {
+          width: 33.333%;
+          float: left;
+          text-align: center;
+     }    
+          .nav-two a {
+               display: inline-block;
+          }
+     .nav-three {
+          width: 33.333%;
+          float: left;
+          text-align: right;
+     }
+          .nav-three a {
+               display: inline;
+          }
+          
+               
+     nav svg {
+          height: 80px;
+          width: 80px;
+     }
