@@ -10,6 +10,20 @@ html {
      font-size: 62.5%;
 }
 
+/* Variables */
+:root {
+     /* text colours */
+     --light-text: #fff;
+     --dark-text: #000;
+     /* font sizes */
+     --h1: 4.8rem;
+     --subheading: 2rem;
+     --section-title: 2.4rem;
+     --title: 2rem;
+     --body: 1.6rem;
+     --button: 1.6rem;
+}
+
 /* Clear fix hack */
 .clearfix:after {
      content: ".";
@@ -28,14 +42,34 @@ html {
 /* BASE STYLES
 /*******************************************/
 
-a {
-     text-decoration: none !important;  /* removing underline */
+header a {
+     text-decoration: none;  /* removing underline */
 }
 li {
      list-style-type: none; /* removing bullet point */
 }
+/* making text uppercase */
 .uppercase {
      text-transform: uppercase;
+}
+/* font sizes */
+.heading {
+     font-size: var(--h1);
+}
+.subheading {
+     font-size: var(--subheading);
+}
+.section-title {
+     font-size: var(--section-title);
+}
+.title {
+     font-size: var(--title);
+}
+.button {
+     font-size: var(--button);
+}
+p, li, a, span {
+     font-size: var(--body);
 }
 
 /******************************************
@@ -78,7 +112,12 @@ section.volunteer {
 header {
      background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/gymbackground.jpg");
      background-size: cover;
+     color: var(--light-text);
 }
+     header a {
+          color: var(--light-text);
+     }
+     /* left nav */
      .nav-one {
           width: 33.333%;
           float: left;
@@ -90,6 +129,7 @@ header {
                .nav-one ul li {
                     display: inline;
                }
+     /* center logo */
      .nav-two {
           width: 33.333%;
           float: left;
@@ -98,6 +138,11 @@ header {
           .nav-two a {
                display: inline-block;
           }
+               nav img {
+                    height: 70px;
+                    width: 70px;
+               }
+     /* right nav (volunteer) */
      .nav-three {
           width: 33.333%;
           float: left;
@@ -107,8 +152,3 @@ header {
                display: inline;
           }
           
-               
-     nav img {
-          height: 70px;
-          width: 70px;
-     }
