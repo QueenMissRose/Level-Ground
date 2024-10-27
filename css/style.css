@@ -42,11 +42,15 @@ html {
 /* BASE STYLES
 /*******************************************/
 
-header a {
+header a, 
+section a, 
+footer a {
      text-decoration: none;  /* removing underline */
 }
-li {
+header ul, 
+ul {
      list-style-type: none; /* removing bullet point */
+     padding: 0; /* removing indentation */
 }
 /* making text uppercase */
 .uppercase {
@@ -99,7 +103,7 @@ section.volunteer {
      width: 100%;
      border: 2px solid purple;
 }
-#footer {
+footer {
      height: 200px;
      width: 100%;
      border: 2px solid purple;
@@ -117,6 +121,7 @@ header {
      header a {
           color: var(--light-text);
      }
+     
      /* left nav */
      .nav-one {
           width: 33.333%;
