@@ -10,20 +10,6 @@ html {
      font-size: 62.5%;
 }
 
-/* Variables */
-:root {
-     /* text colours */
-     --light-text: #fff;
-     --dark-text: #000;
-     /* font sizes */
-     --h1: 4.8rem;
-     --subheading: 2rem;
-     --section-title: 2.4rem;
-     --title: 2rem;
-     --body: 1.6rem;
-     --button: 1.6rem;
-}
-
 /* Clear fix hack */
 .clearfix:after {
      content: ".";
@@ -36,6 +22,23 @@ html {
 
 .clear {
 	clear: both;
+}
+
+/* Variables */
+:root {
+     /* text colours */
+     --light-text: #fff;
+     --dark-text: #000;
+     /* font sizes */
+     --h1: 5.5rem;
+     --subheading: 2rem;
+     --section-title: 2.4rem;
+     --title: 2rem;
+     --body: 1.6rem;
+     --button: 1.6rem;
+     /* fonts */
+     --heading-font: 'Oswald', sans-serif;
+     --body-font: 'Lato', sans-serif;
 }
 
 /******************************************
@@ -51,30 +54,38 @@ header ul,
 ul {
      list-style-type: none; /* removing bullet point */
      padding: 0; /* removing indentation */
-     margin: 0;
+     margin: 0; /* removing hidden margin */
 }
 /* making text uppercase */
 .uppercase {
      text-transform: uppercase;
 }
-/* font sizes */
+/* font styles */
 .heading {
      font-size: var(--h1);
+     font-family: var(--heading-font);
+     font-weight: 400;
 }
 .subheading {
      font-size: var(--subheading);
+     font-family: var(--body-font);
+     font-weight: 400;
 }
 .section-title {
      font-size: var(--section-title);
+     font-family: var(--heading-font);
 }
 .title {
      font-size: var(--title);
+     font-family: var(--heading-font);
 }
 .button {
      font-size: var(--button);
+     font-family: var(--body-font);
 }
 p, li, a, span {
      font-size: var(--body);
+     font-family: var(--body-font);
 }
 
 /******************************************
@@ -154,6 +165,7 @@ header {
                     nav img {
                          height: 70px;
                          width: 70px;
+                         vertical-align: middle;
                     }
           /* right nav (volunteer) */
           section.nav-three {
@@ -164,4 +176,14 @@ header {
                .nav-three a {
                     display: inline;
                }
+     
+     .heading {
+          text-align: center;
+     }
+     .subheading {
+          text-align: center;
+     }
+     .video-link span {
+          text-align: center;
+     }
           
