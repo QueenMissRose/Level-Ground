@@ -28,7 +28,9 @@ html {
 :root {
      /* text colours */
      --light-text: #fff;
+     --soft-text: #ffffff90;
      --dark-text: #000;
+     --soft-dark: #000000bc;
      /* font sizes */
      --h1: 5.5rem;
      --subheading: 2rem;
@@ -126,11 +128,13 @@ footer {
 /*******************************************/
 
 header {
+     position: relative;
      background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/gymbackground.jpg");
      background-size: cover;
      color: var(--light-text);
      padding: 0 40px;
 }
+     /* nav */
      header a {
           color: var(--light-text);
      }
@@ -152,7 +156,14 @@ header {
                }
                     .nav-one ul li {
                          display: inline;
+                         margin-right: 1.6rem;
                     }
+                         .nav-one ul li a {
+                              transition: .3s;
+                         }
+                         .nav-one ul li a:hover {
+                              color: var(--soft-text);
+                         }
           /* center logo */
           section.nav-two {
                width: 33.333%;
@@ -170,20 +181,37 @@ header {
           /* right nav (volunteer) */
           section.nav-three {
                width: 33.333%;
+               height: 100px;
                float: left;
                text-align: right;
+               vertical-align: middle;
           }
                .nav-three a {
                     display: inline;
+                    vertical-align: middle;
+                    background: #eee;
+                    padding: 8px 10px;
+                    border-radius: 3px;
+                    color: var(--dark-text);
+                    transition: 0.5s;
                }
-     
-     .heading {
+               .nav-three a:hover {
+                    background: transparent;
+                    color: var(--light-text);
+               }
+     /* heading */
+     .heading-container {
+          position: absolute;
           text-align: center;
+          top: 40%;
+          left: 50%;
+          transform: translate(-50%);
      }
-     .subheading {
-          text-align: center;
-     }
-     .video-link span {
-          text-align: center;
-     }
+          .subheading {
+               margin: 16px; 
+          }
+          .video-link span {
+               vertical-align: middle; /* centering text with icon */
+               color: var(--soft-text);
+          }
           
