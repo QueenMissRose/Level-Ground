@@ -51,6 +51,7 @@ header ul,
 ul {
      list-style-type: none; /* removing bullet point */
      padding: 0; /* removing indentation */
+     margin: 0;
 }
 /* making text uppercase */
 .uppercase {
@@ -117,13 +118,17 @@ header {
      background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/gymbackground.jpg");
      background-size: cover;
      color: var(--light-text);
+     padding: 0 40px;
 }
      header a {
           color: var(--light-text);
      }
-     
+     .nav {
+          line-height: 100px;
+          vertical-align: middle;
+     }
      /* left nav */
-     .nav-one {
+     section.nav-one {
           width: 33.333%;
           float: left;
      }
@@ -135,7 +140,7 @@ header {
                     display: inline;
                }
      /* center logo */
-     .nav-two {
+     section.nav-two {
           width: 33.333%;
           float: left;
           text-align: center;
@@ -148,7 +153,7 @@ header {
                     width: 70px;
                }
      /* right nav (volunteer) */
-     .nav-three {
+     section.nav-three {
           width: 33.333%;
           float: left;
           text-align: right;
