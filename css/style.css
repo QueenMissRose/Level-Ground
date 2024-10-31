@@ -34,9 +34,9 @@ html {
      /* font sizes */
      --h1: 5.5rem;
      --subheading: 2rem;
-     --section-title: 2.4rem;
+     --section-title: 3.6rem;
      --title: 2rem;
-     --body: 1.6rem;
+     --body: 2rem;
      --button: 1.6rem;
      /* fonts */
      --heading-font: 'Oswald', sans-serif;
@@ -72,22 +72,27 @@ ul {
      font-size: var(--subheading);
      font-family: var(--body-font);
      font-weight: 400;
+     letter-spacing: .06rem;
 }
 .section-title {
      font-size: var(--section-title);
      font-family: var(--heading-font);
+     font-weight: 400;
 }
 .title {
      font-size: var(--title);
      font-family: var(--heading-font);
+     font-weight: 400;
 }
 .button {
      font-size: var(--button);
-     font-family: var(--body-font);
+     font-family: var(--heading-font);
+     font-weight: 400;
 }
 p, li, a, span {
      font-size: var(--body);
      font-family: var(--body-font);
+     letter-spacing: .06rem;
 }
 
 /******************************************
@@ -103,15 +108,16 @@ section {
      float: left;
 }
 section.why {
-     height: 680px;
+     height: 600px;
      width: 100%;
-     border: 2px solid purple;
 }
 section.visit {
      height: 100vh;
      width: 100%;
-     border: 2px solid purple;
 }
+     .visit .col {
+          width: 50%;
+     }
 section.volunteer {
      height: 800px;
      width: 100%;
@@ -127,6 +133,7 @@ footer {
 /* ADDITIONAL STYLES
 /*******************************************/
 
+/********* HERO Section ********/
 header {
      position: relative;
      background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/gymbackground.jpg");
@@ -214,4 +221,33 @@ header {
                vertical-align: middle; /* centering text with icon */
                color: var(--soft-text);
           }
-          
+
+/*************   WHY section   **************/
+
+section.why {
+     background: #fff;
+     padding: 18rem 26rem;
+     text-align: center;
+}
+     .why h1,
+     .why p {
+          margin: 30px;
+     }
+     .why p {
+          line-height: 1.2;
+     }
+
+/************  VISIT section  *************/
+
+section.visit {
+     background: #DBDFE2;
+     text-align: center;
+}
+     .visit .col {
+          padding: 18rem 0;
+     }
+     .visit .col img {
+          width: 40rem;
+          height: 26rem;
+
+     }
