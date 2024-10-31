@@ -94,7 +94,20 @@ p, li, a, span {
      font-family: var(--body-font);
      letter-spacing: .06rem;
 }
-
+/* button styling */
+.button {
+     display: inline-block;
+     width: 20rem;
+     padding: 1rem;
+     border: 2px solid var(--dark-text);
+     border-radius: 6px;
+     color: var(--dark-text);
+     transition: 0.3s;
+}
+.button:hover {
+     color: var(--soft-dark);
+     border: 2px solid var(--soft-dark);
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -112,21 +125,19 @@ section.why {
      width: 100%;
 }
 section.visit {
-     height: 100vh;
+     height: 800px;
      width: 100%;
 }
      .visit .col {
           width: 50%;
      }
 section.volunteer {
-     height: 800px;
+     height: 700px;
      width: 100%;
-     border: 2px solid purple;
 }
 footer {
-     height: 200px;
+     height: 400px;
      width: 100%;
-     border: 2px solid purple;
 }
 
 /******************************************
@@ -139,7 +150,7 @@ header {
      background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/gymbackground.jpg");
      background-size: cover;
      color: var(--light-text);
-     padding: 0 40px;
+     padding: 0 4rem;
 }
      /* nav */
      header a {
@@ -229,9 +240,9 @@ section.why {
      padding: 18rem 26rem;
      text-align: center;
 }
-     .why h1,
+     .why h2,
      .why p {
-          margin: 30px;
+          margin: 15px;
      }
      .why p {
           line-height: 1.2;
@@ -244,10 +255,75 @@ section.visit {
      text-align: center;
 }
      .visit .col {
-          padding: 18rem 0;
+          padding: 16rem 6rem;
      }
-     .visit .col img {
-          width: 40rem;
-          height: 26rem;
+          .visit .col img {
+               width: 40rem;
+               height: 26rem;
+          }
+          .visit .col h3,
+          .visit .col p,
+          .visit .col a {
+               margin: 2rem 0;
+          }
+/************  VOLUNTEER section  *************/
 
+section.volunteer {
+     background: #fff;
+     color: var(--dark-text);
+     text-align: center;
+     padding: 18rem 26rem;
+}
+          .volunteer h3, 
+          .volunteer p,
+          .volunteer a {
+               margin: 3rem 0;
+          }
+
+/************  FOOTER section  *************/
+
+footer {
+     background: #161F2A;
+     color: var(--light-text);
+     padding: 4rem;
+}
+     footer a {
+          color: var(--light-text);
+     }
+     footer div span {
+          color: var(--soft-text);
+     }
+     .left,
+     .right {
+          width: 50%;
+     }
+     .left{
+          text-align: left;
+     }
+          .left ul li {
+               display: inline;
+          }
+     .right {
+          text-align: right;
+     }
+          .right a {
+               color: var(--soft-text);
+          }
+     /* line break */
+     .line-break {
+          float: left;
+          display: block;
+          width: 100%;
+          height: 2px;
+          border-bottom: 2px solid var(--soft-text);
+          margin: 4rem 0 2rem 0;
+     }
+     /* bottom section */
+     .tax {
+          width: 100%;
+     }
+     footer img {
+          height: 70px;
+          width: 70px;
+          vertical-align: middle;
      }
