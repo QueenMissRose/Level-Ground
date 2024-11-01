@@ -89,7 +89,7 @@ ul {
      font-family: var(--heading-font);
      font-weight: 400;
 }
-p, li, a, span {
+p, li, a, span, h6 {
      font-size: var(--body);
      font-family: var(--body-font);
      letter-spacing: .06rem;
@@ -287,12 +287,6 @@ footer {
      color: var(--light-text);
      padding: 4rem;
 }
-     footer a {
-          color: var(--light-text);
-     }
-     footer div span {
-          color: var(--soft-text);
-     }
      .left,
      .right {
           width: 50%;
@@ -300,15 +294,36 @@ footer {
      .left{
           text-align: left;
      }
+          .left h6 {
+               color: var(--soft-text);
+               font-size: 1.4rem;
+               margin: 2rem 0 .5rem 0;
+          }
           .left ul li {
                display: inline;
+               margin: 0 1.5rem 0 0;
           }
+               .left ul li a {
+                    color: var(--light-text);
+                    transition: 0.3s;
+               }
+               .left ul li a:hover {
+                    color: var(--soft-text);
+               }
      .right {
           text-align: right;
      }
+          .right ul {
+               margin: 0 0 2rem 0;
+          }
           .right a {
                color: var(--soft-text);
+               transition: 0.3s;
           }
+          .right a:hover {
+               color: var(--light-text);
+          }
+          
      /* line break */
      .line-break {
           float: left;
@@ -322,8 +337,8 @@ footer {
      .tax {
           width: 100%;
      }
-     footer img {
-          height: 70px;
-          width: 70px;
-          vertical-align: middle;
-     }
+          .tax img {
+               height: 70px;
+               width: 70px;
+               vertical-align: middle;
+          }
