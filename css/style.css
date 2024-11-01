@@ -89,6 +89,9 @@ ul {
      font-family: var(--heading-font);
      font-weight: 400;
 }
+.nav-link {
+     font-size: var(--button);
+}
 p, li, a, span, h6 {
      font-size: var(--body);
      font-family: var(--body-font);
@@ -136,7 +139,7 @@ section.volunteer {
      width: 100%;
 }
 footer {
-     height: 400px;
+     height: 350px;
      width: 100%;
 }
 
@@ -342,3 +345,12 @@ footer {
                width: 70px;
                vertical-align: middle;
           }
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+/* for screen sizes between 769px - 1024px */
+@media (min-width: 76.9rem) and (max-width: 102.4rem) {
+     
+}
