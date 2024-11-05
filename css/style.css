@@ -8,6 +8,7 @@
 /* rem font size set to 10px */
 html {
      font-size: 62.5%;
+     scroll-behavior: smooth;
 }
 
 /* Clear fix hack */
